@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>React Basics</title>
+</head>
+
+<body>
+    <div class="js-container"></div>
+
+    <script src="https://unpkg.com/supersimpledev/react.js"></script>
+    <script src="https://unpkg.com/supersimpledev/react-dom.js"></script>
+
+    <script src="https://unpkg.com/supersimpledev/babel.js"></script>
+    <script type="text/babel">
+        function Text() {
+            return (
+                <>
+                    Hello, welcome to my website.
+                </>
+            );
+        }
+
+        function InputField({ type }) {
+            return (
+                <div>
+                    {type === "email" && (<input placeholder="Email" type="email" />)}
+                    {type === "password" && (<input placeholder="Password" type="password" />)}
+                </div>
+            );
+        }
+
+        function Button({ purpose }) {
+            return (
+                <>
+                    {purpose === "login" && (<button>Login</button>)}
+                    {purpose === "register" && (<button>Sign up</button>)}
+                </>
+            );
+        }
+
+        function LoginForm() {
+            return (
+                <>
+                    <InputField type="email" />
+                    <InputField type="password" />
+                    <div>
+                        <Button purpose="login"></Button>
+                        <Button purpose="register"></Button>
+                    </div>
+                </>
+            );
+        }
+
+        function App() {
+            return (
+                <>
+                    <Text></Text>
+                    <LoginForm/>
+                </>
+            );
+        }
+
+        const container = document.querySelector('.js-container');
+        ReactDOM.createRoot(container).render(<App />);
+    </script>
+</body>
+
+</html>
