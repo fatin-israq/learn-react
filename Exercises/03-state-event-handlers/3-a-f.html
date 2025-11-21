@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React Basics</title>
+</head>
+
+<body>
+    <h1>Exercise: Clicking Button</h1>
+    <div class="js-container"></div>
+
+    <script src="https://unpkg.com/supersimpledev/react.js"></script>
+    <script src="https://unpkg.com/supersimpledev/react-dom.js"></script>
+
+    <script src="https://unpkg.com/supersimpledev/babel.js"></script>
+    <script type="text/babel">
+
+        function Counter({ count, setCount }) {
+            return (
+                <>
+                    <button onClick={() => setCount(count + 1)}>
+                        {count <= 1 && `Clicked ${count} time`}
+                        {count > 1 && `Clicked ${count} times`}
+                    </button>
+                </>
+            )
+        }
+
+        function App() {
+            const [count, setCount] = React.useState(0);
+
+            return (
+                <>
+                    <Counter count={count} setCount={setCount}></Counter>
+                    <Counter count={count} setCount={setCount}></Counter>
+                </>
+            )
+        }
+
+        const container = document.querySelector('.js-container');
+        ReactDOM.createRoot(container).render(<App />);
+    </script>
+
+</body>
+
+</html>
