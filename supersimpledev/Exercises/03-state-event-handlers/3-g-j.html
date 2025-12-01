@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React Basics</title>
+</head>
+
+<body>
+    <h1>Exercise: Working with Inputs</h1>
+    <div class="js-container"></div>
+
+    <script src="https://unpkg.com/supersimpledev/react.js"></script>
+    <script src="https://unpkg.com/supersimpledev/react-dom.js"></script>
+
+    <script src="https://unpkg.com/supersimpledev/babel.js"></script>
+    <script type="text/babel">
+        function Input() {
+            return (
+                <>
+                    <input type="text" name="" id="" onChange={Para}></input>
+                </>
+            )
+        }
+
+        function Para() {
+            return (
+                <>
+                <p>Hello </p>
+                </>
+            )
+        }
+
+        function App() {
+            return (
+                <>
+                    <Input />
+                    <Para />
+                </>
+            )
+        }
+
+        const container = document.querySelector('.js-container');
+        ReactDOM.createRoot(container).render(<App />);
+    </script>
+
+</body>
+
+</html>
