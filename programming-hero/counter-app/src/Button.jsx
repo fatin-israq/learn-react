@@ -32,6 +32,16 @@ export default function Button({ name, onClick }) {
           {name}
         </button>
       )}
+      {name === "Hide" && (
+        <button style={add} onClick={onClick}>
+          {name}
+        </button>
+      )}
+      {name === "Show" && (
+        <button style={add} onClick={onClick}>
+          {name}
+        </button>
+      )}
     </>
   );
 }
