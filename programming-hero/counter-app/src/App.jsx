@@ -3,9 +3,10 @@ import "./App.css";
 import Counter from "./Counter";
 import Heading from "./Heading";
 import Button from "./Button";
+import List from "./List";
 
 function App() {
-  const [visible, setVisible] = useState(true);
+  const [visible, setVisible] = useState(false);
 
   const show = () => {
     setVisible(true);
@@ -24,8 +25,8 @@ function App() {
       <Counter></Counter>
       {visible ? (
         <div>
-          <p>This text can be hidden</p>
           <Button onClick={hide} name="Hide"></Button>
+          <List></List>
         </div>
       ) : (
         <div>

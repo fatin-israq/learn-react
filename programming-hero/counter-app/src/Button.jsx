@@ -33,7 +33,7 @@ export default function Button({ name, onClick }) {
         </button>
       )}
       {name === "Hide" && (
-        <button style={add} onClick={onClick}>
+        <button style={sub} onClick={onClick}>
           {name}
         </button>
       )}
