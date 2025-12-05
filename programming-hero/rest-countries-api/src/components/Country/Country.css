@@ -1,0 +1,44 @@
+.country {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  text-align: center;
+  max-width: 280px;
+}
+
+.country-visited {
+    background-color: lightcyan;
+}
+
+.country:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.country img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.country h3 {
+  margin: 10px 0;
+  font-size: 1.3rem;
+  color: #333;
+}
+
+.country p {
+  color: #666;
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+.country .population {
+  font-weight: 600;
+  color: #2563eb;
+}
