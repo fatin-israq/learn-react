@@ -2,26 +2,22 @@
 
 A simple React counter application to practice state management and event handling.
 
-## 📚 What I Learned
+## 🌐 Live Demo
 
-- Using `useState` hook for state management
-- Passing props between components
-- Handling click events
-- Component composition and reusability
+**[View Live App](https://counter-n-api-fetch-practice.netlify.app/)**
+
+## 📸 Screenshot
+
+![App Screenshot](./src/assets/Screenshot%202025-12-05%20at%2023.59.48.png)
 
 ## 🚀 Features
 
 - ➕ Increment counter by 1
 - ➖ Decrement counter by 1
 - 🔄 Reset counter to 0
-- 🎨 Clean and simple UI
-
-## 🛠️ Tech Stack
-
-- React 18+
-- Vite
-- JavaScript (ES6+)
-
+- 👁️ Show/Hide feature with toggle button
+- 📋 User list with API fetching
+- 🎨 Clean and modern UI
 
 ## 🎯 Key Concepts Practiced
 
@@ -31,8 +27,8 @@ A simple React counter application to practice state management and event handli
 const [count, setCount] = useState(0);
 ```
 
-- State is managed in the `Counter` component
-- Updates trigger re-renders
+- Managing local component state
+- State updates trigger re-renders
 
 ### Event Handlers
 
@@ -40,29 +36,54 @@ const [count, setCount] = useState(0);
 const handleIncrement = () => setCount(count + 1);
 ```
 
-- Functions passed as props to child components
-- Handle user interactions
+- Handling user interactions
+- Passing functions as props
 
-### Component Props
+### Conditional Rendering
 
 ```jsx
-<Button name="+1" onClick={handleIncrement} />
+{
+  visible ? <Component /> : <AlternativeComponent />;
+}
 ```
 
-- Data flows from parent to child
-- Makes components reusable
+- Show/hide components based on state
+- Ternary operators for UI logic
 
-## 🎓 Learning Notes
+### Data Fetching with Suspense
 
-This project helped me understand:
+```jsx
+<Suspense fallback={<Loading />}>
+  <Users fetchUsers={fetchUsers} />
+</Suspense>
+```
+
+- Modern React data fetching with `use()` hook
+- Loading states with Suspense
+
+## 📚 What I Learned
 
 - How `useState` returns an array `[value, setter]`
 - Why we can't modify state directly (must use setter function)
-- How to pass functions as props for event handling
-- The importance of component composition
+- Passing functions and data as props between components
+- Conditional rendering with ternary operators
+- Fetching data from APIs with modern React patterns
+- Using Suspense for loading states
 
+## 🚀 Getting Started
+
+```bash
+# Install dependencies
+npm install
+
+# Run development server
+npm run dev
+
+# Build for production
+npm run build
+```
 
 ---
 
-**Project Type:** Practice/Learning  
+**Project Type:** Learning/Practice  
 **Date:** December 2025
