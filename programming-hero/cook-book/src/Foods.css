@@ -1,0 +1,33 @@
+.foods-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.foods-title {
+  text-align: center;
+  font-size: 1.75rem;
+  color: rgb(167, 210, 233);
+  margin-bottom: 40px;
+  font-weight: 600;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.foods-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 0 20px;
+}
+
+@media (max-width: 768px) {
+  .foods-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .foods-title {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+}

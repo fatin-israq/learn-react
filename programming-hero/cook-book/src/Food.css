@@ -1,0 +1,72 @@
+.food-card {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.food-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.food-image {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  display: block;
+}
+
+.food-content {
+  padding: 20px;
+}
+
+.food-title {
+  margin: 0 0 15px 0;
+  font-size: 1.4rem;
+  color: #333;
+  font-weight: 600;
+}
+
+.youtube-link,
+.recipe-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 16px;
+  margin-right: 10px;
+
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-decoration: none;
+
+  border-radius: 12px;
+  border: 1.5px solid #e5e7eb;
+  background: #ffffff;
+  color: #111827;
+
+  transition: all 0.25s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+/* Subtle hover / active effect */
+.youtube-link:hover,
+.recipe-link:hover {
+  background: #f3f4f6;
+  border-color: #d1d5db;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.youtube-link:active,
+.recipe-link:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+
+.youtube-link::before,
+.recipe-link::before {
+  font-size: 1.1rem;
+}
