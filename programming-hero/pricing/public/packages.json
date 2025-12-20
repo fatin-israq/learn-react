@@ -1,0 +1,202 @@
+[
+  {
+    "id": 1,
+    "name": "Starter",
+    "slug": "starter-package",
+    "price": {
+      "currency": "USD",
+      "amount": 49,
+      "billingType": "one-time"
+    },
+    "description": "Basic website package suitable for personal portfolios and small static sites.",
+    "isPopular": false,
+    "features": {
+      "pages": 3,
+      "responsiveDesign": true,
+      "customUI": false,
+      "seoOptimization": {
+        "enabled": true,
+        "keywords": 5
+      },
+      "performance": {
+        "optimization": false,
+        "cdn": false
+      }
+    },
+    "support": {
+      "type": "Email",
+      "responseTime": "48 hours",
+      "duration": "7 days"
+    },
+    "delivery": {
+      "timeInDays": 5,
+      "revisions": 1
+    },
+    "technologies": ["HTML", "CSS", "JavaScript"],
+    "addonsAvailable": true,
+    "createdAt": "2025-01-01"
+  },
+  {
+    "id": 2,
+    "name": "Basic Business",
+    "slug": "basic-business-package",
+    "price": {
+      "currency": "USD",
+      "amount": 149,
+      "billingType": "one-time"
+    },
+    "description": "Professional website package for small businesses and startups.",
+    "isPopular": true,
+    "features": {
+      "pages": 6,
+      "responsiveDesign": true,
+      "customUI": true,
+      "seoOptimization": {
+        "enabled": true,
+        "keywords": 10
+      },
+      "performance": {
+        "optimization": true,
+        "cdn": false
+      }
+    },
+    "support": {
+      "type": "Email + Chat",
+      "responseTime": "24 hours",
+      "duration": "14 days"
+    },
+    "delivery": {
+      "timeInDays": 7,
+      "revisions": 2
+    },
+    "technologies": ["HTML", "CSS", "JavaScript", "Tailwind"],
+    "addonsAvailable": true,
+    "createdAt": "2025-01-01"
+  },
+  {
+    "id": 3,
+    "name": "Professional",
+    "slug": "professional-package",
+    "price": {
+      "currency": "USD",
+      "amount": 299,
+      "billingType": "one-time"
+    },
+    "description": "Advanced website package with dynamic content and better performance.",
+    "isPopular": false,
+    "features": {
+      "pages": 10,
+      "responsiveDesign": true,
+      "customUI": true,
+      "seoOptimization": {
+        "enabled": true,
+        "keywords": 20
+      },
+      "performance": {
+        "optimization": true,
+        "cdn": true
+      }
+    },
+    "support": {
+      "type": "Priority Email + Chat",
+      "responseTime": "12 hours",
+      "duration": "30 days"
+    },
+    "delivery": {
+      "timeInDays": 10,
+      "revisions": 3
+    },
+    "technologies": ["React", "Tailwind", "Node.js"],
+    "analytics": {
+      "googleAnalytics": true,
+      "basicReporting": true
+    },
+    "createdAt": "2025-01-01"
+  },
+  {
+    "id": 4,
+    "name": "E-Commerce",
+    "slug": "ecommerce-package",
+    "price": {
+      "currency": "USD",
+      "amount": 599,
+      "billingType": "one-time"
+    },
+    "description": "Complete e-commerce solution with payment integration and product management.",
+    "isPopular": true,
+    "features": {
+      "pages": "Unlimited",
+      "responsiveDesign": true,
+      "customUI": true,
+      "seoOptimization": {
+        "enabled": true,
+        "keywords": 30
+      },
+      "performance": {
+        "optimization": true,
+        "cdn": true
+      },
+      "ecommerce": {
+        "products": 100,
+        "paymentGateway": ["Stripe", "PayPal"],
+        "orderManagement": true
+      }
+    },
+    "support": {
+      "type": "24/7 Priority Support",
+      "responseTime": "4 hours",
+      "duration": "60 days"
+    },
+    "delivery": {
+      "timeInDays": 14,
+      "revisions": 4
+    },
+    "technologies": ["Next.js", "Node.js", "MongoDB"],
+    "security": {
+      "ssl": true,
+      "basicFirewall": true
+    },
+    "createdAt": "2025-01-01"
+  },
+  {
+    "id": 5,
+    "name": "Enterprise",
+    "slug": "enterprise-package",
+    "price": {
+      "currency": "USD",
+      "amount": 1299,
+      "billingType": "custom"
+    },
+    "description": "Enterprise-grade solution tailored for large-scale applications and platforms.",
+    "isPopular": false,
+    "features": {
+      "pages": "Unlimited",
+      "responsiveDesign": true,
+      "customUI": true,
+      "seoOptimization": {
+        "enabled": true,
+        "keywords": "Unlimited"
+      },
+      "performance": {
+        "optimization": true,
+        "cdn": true
+      },
+      "customIntegrations": true
+    },
+    "support": {
+      "type": "Dedicated Account Manager",
+      "responseTime": "1 hour",
+      "duration": "6 months"
+    },
+    "delivery": {
+      "timeInDays": 21,
+      "revisions": "Unlimited"
+    },
+    "technologies": ["Next.js", "Node.js", "PostgreSQL", "Redis"],
+    "maintenance": {
+      "included": true,
+      "duration": "3 months"
+    },
+    "createdAt": "2025-01-01"
+  }
+]
