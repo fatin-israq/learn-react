@@ -2,13 +2,15 @@ import React from "react";
 
 const Package = ({ pkg }) => {
   return (
-    <div className="card w-96 bg-indigo-700 shadow-sm rounded-2xl">
-      <div className="card-body">
-        <span className="badge badge-xs badge-warning">Most Popular</span>
+    <div className="card w-96 bg-base-100 shadow-sm hover:shadow-xl hover:bg-base-200 duration-300 hover:scale-105 transition-transform">
+      <div className="card-body flex flex-col">
+        {pkg.isPopular && (
+          <span className="badge badge-xs badge-warning">Most Popular</span>
+        )}
         <div className="flex justify-between">
           <h2 className="text-3xl font-bold">{pkg.name}</h2>
           <span className="text-xl">
-            {pkg.price.amount} {pkg.price.currency} {pkg.price.billingType}
+            ${pkg.price.amount} {pkg.price.billingType}
           </span>
         </div>
         <ul className="mt-6 flex flex-col gap-2 text-xs">
@@ -115,7 +117,7 @@ const Package = ({ pkg }) => {
             <span className="line-through">Real-time collaboration tools</span>
           </li>
         </ul>
-        <div className="mt-6">
+        <div className="mt-auto">
           <button className="btn btn-primary btn-block">Subscribe</button>
         </div>
       </div>
