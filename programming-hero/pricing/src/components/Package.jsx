@@ -2,16 +2,19 @@ import React from "react";
 
 const Package = ({ pkg }) => {
   return (
-    <div className="card w-96 bg-base-100 shadow-sm hover:shadow-xl hover:bg-base-200 duration-300 hover:scale-105 transition-transform">
+    <div className="card w-96 bg-base-200 shadow-sm hover:shadow-xl hover:bg-base-300 duration-300 hover:scale-105 transition-transform">
       <div className="card-body flex flex-col">
-        {pkg.isPopular && (
-          <span className="badge badge-xs badge-warning">Most Popular</span>
-        )}
         <div className="flex justify-between">
           <h2 className="text-3xl font-bold">{pkg.name}</h2>
           <span className="text-xl">
             ${pkg.price.amount} {pkg.price.billingType}
           </span>
+        </div>
+        {pkg.isPopular && (
+          <span className="badge badge-xs badge-warning">Most Popular</span>
+        )}
+        <div className="flex justify-between">
+          <h2 className="text-md font-extralight">{pkg.description}</h2>
         </div>
         <ul className="mt-6 flex flex-col gap-2 text-xs">
           <li>
