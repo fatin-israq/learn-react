@@ -40,6 +40,16 @@ const Navbar = () => {
             Laptops
           </NavLink>
           <NavLink
+            to="/users"
+            className={({ isActive }) =>
+              isActive
+                ? "text-blue-600 font-medium"
+                : "text-gray-600 hover:text-gray-900 transition"
+            }
+          >
+            Users
+          </NavLink>
+          <NavLink
             to="/about"
             className={({ isActive }) =>
               isActive
